@@ -14,7 +14,7 @@ def download_model():
     # Check if the file already exists
     if not os.path.exists(file_path):
         # Use the direct download link format
-        url = 'https://drive.google.com/uc?id=147s7Y2kVnIWLq67oI0uQmGt_s77M3pRQ'
+        url = 'https://drive.google.com/file/d/16IaWqKKCoyk2h7eJRFpOKEKzks6wqwHE/view?usp=sharing'
         gdown.download(url, file_path, quiet=False)
     else:
         st.write("Model file already exists. Skipping download.")
